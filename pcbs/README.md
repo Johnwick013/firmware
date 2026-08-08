@@ -1,6 +1,11 @@
 # Bruce PCBs
 
 Here are some of the open-source community made PCBs, you can download them and print whenever you want to OR you can order directly with our sponsor PCBWAY just by clicking on the banner above:
+
+## Bruce Ultra Compact (design)
+
+Pocket-sized high-RF target with external SMA antennas for SubGHz, Wi‑Fi, and nRF24, plus ST25R3916 HF and on-board LF 125 kHz.
+See [`Bruce_Ultra_Compact/`](./Bruce_Ultra_Compact/) for architecture, BOM, pin map, and mechanical keepouts. Firmware env: `bruce-ultra`.
 ## Order here
 [![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway-1220.png)](https://www.pcbway.com/project/shareproject/Bruce_PCB_Smoochiee_d6a0284b.html)
 

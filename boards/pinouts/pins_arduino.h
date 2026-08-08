@@ -28,6 +28,8 @@
 #include "../smoochiee-board/pins_arduino.h"
 #elif XK404
 #include "../xk404/pins_arduino.h"
+#elif BRUCE_ULTRA
+#include "../bruce-ultra/pins_arduino.h"
 #elif REAPER
 #include "../reaper/pins_arduino.h"
 #elif T_WATCH_S3
