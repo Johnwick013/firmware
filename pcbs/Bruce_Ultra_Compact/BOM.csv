@@ -1,0 +1,25 @@
+Category,Part,MPN / example,Qty,Notes
+MCU,ESP32-S3 module N16R8 IPEX,ESP32-S3-WROOM-1U-N16R8,1,Must be -1U for external WiFi antenna
+Display,1.47in IPS ST7789 172x320,MSP147x / compatible,1,Landscape UI like Reaper
+RF SubGHz,CC1101 +20dBm module,E07-433M20S,1,Default 433; alt E07-900M20S for 868/915
+RF 2.4,nRF24 +27dBm module,E01-2G4M27SX,1,Dedicated 2.4 SMA; firmware mutex vs WiFi TX
+NFC HF,ST25R3916 transceiver,ST25R3916 / ST25R3916B,1,Read/write/emulate HF
+NFC coil,Custom PCB/FPC loop,~40x30mm class,1,Tune to 13.56 MHz; keep battery copper clear
+RFID LF,125kHz UART R/W(+emulate),PN532Killer UART or EM4095 frontend,1,Flipper-class LF path
+IO expander,AW9523,AW9523BTQR,1,Vibro / RF enables / LEDs
+Charger,BQ25896,BQ25896,1,USB-C charge path
+Fuel gauge,BQ27220,BQ27220,1,Design capacity 800-1000 mAh
+Storage,microSD socket,Push-push microSD,1,Shared SPI with RF CS discipline
+IR TX,IR LED 940nm + driver,IR26-51C class,1,Front bezel
+IR RX,IR receiver module,VS1838B class,1,Front bezel
+Haptics,Vibration motor,0827 / 1020 coin,1,Via IO expander
+Audio,Buzzer,Passive/active 3V3,1,
+Antenna WiFi,RP-SMA bulkhead + stub/omni,2.4 GHz RP-SMA,1,From module IPEX via pigtail
+Antenna SubGHz,RP-SMA bulkhead + helical/whip,433 or 868/915 matched,1,Short helical pocket / whip ultra
+Antenna 2.4 RF,RP-SMA or MMCX + stub,2.4 GHz,1,Physically separated from WiFi SMA
+Pigtails,IPEX/u.FL to SMA,Matched length <80mm,3,One per radio path
+Battery,LiPo 3.7V flat,800-1000 mAh,1,Fuel gauge design capacity must match
+USB,USB-C receptacle + ESD,USB4165 / equivalent,1,CC resistors for device mode
+Buttons,5-way + ESC,ALPS / clone navigation,1,Same UX as Reaper
+Passives/reg,3V3 buck/LDO RF-quiet + decoupling,BOM fill,1,Separate RF analog decoupling
+Mechanics,3D case + SMA keepouts,Printable,1,See MECHANICAL.md
